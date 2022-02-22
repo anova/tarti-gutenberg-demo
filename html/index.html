@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slider Demo</title>
+<link rel="stylesheet" href="http://tarti.kreatif.net/assets/css/style.css">
+
+<h1>Page Demo</h1>
+
+<div class="p-slidebox p-slidebox--motivation">
+  <div class="container">
+    <div class="p-slidebox__dots"></div>
+    <div class="p-slidebox__slider">
+      <div class="p-slidebox__slide">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <div class="col-12 p-slidebox__text">
+              <h6>Motivasyona mı ihtiyacınız var? </h6>
+              <p>Sağlıklı vücut hedeflerinize ulaşmak için ihtiyacınız olan motivasyon bir adım mesafede.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img data-lazy="assets/img/motivation.webp">
+          </div>
+        </div>
+      </div>
+      <div class="p-slidebox__slide">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <div class="col-12 p-slidebox__text">
+              <h6>Metabolizma haritanızı çıkarın</h6>
+              <p>Vücut analizinizi yapın ve kolayca değişiminizi takip edin.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img data-lazy="assets/img/metabolism.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 40px; margin-bottom: 40px;">
+  <h1>Component Demo</h1>
+
+  <style>
+    [data-component] {
+      position: relative;
+    }
+    [data-component]::before {
+      content: attr(data-component);
+      line-height: 16px;
+      position: absolute;
+      top: -10px;
+      background-color: white;
+      border: solid 1px blue;
+      left: 5px;
+      padding: 4px;
+    }
+  </style>
+
+  <div data-component="slider" style="padding: 50px 0; margin-left: 10px; margin-right: 10px; background: linear-gradient(to bottom, #f7fcfa, #ebf7f2); outline: solid 1px blue;">
+    <div data-component="slider/slide" style="display: flex; align-items: center; max-width: 1100px; margin: 0 auto 25px; outline: solid 1px blue;">
+      <div style="width: 50%; font-family: sans-serif; font-size: 15px; padding: 0 60px;">
+        <h6 style="font-size: 42px; font-weight: 600;">Motivasyona mı ihtiyacınız var?</h6>
+        <p>Sağlıklı vücut hedeflerinize ulaşmak için ihtiyacınız olan motivasyon bir adım mesafede.</p>
+      </div>
+      <img style="width: 50%;" src="assets/img/motivation.webp">
+    </div>
+
+    <div data-component="slider/slide" style="display: flex; align-items: center; max-width: 1100px; margin: 0 auto 25px; outline: solid 1px blue;">
+      <div style="width: 50%; font-family: sans-serif; font-size: 15px; padding: 0 60px;">
+        <h6 style="font-size: 42px; font-weight: 600;">Metabolizma haritanızı çıkarın</h6>
+        <p>Vücut analizinizi yapın ve kolayca değişiminizi takip edin.</p>
+      </div>
+      <img style="width: 50%;" src="assets/img/metabolism.webp">
+    </div>
+
+  </div>
+
+</div>
+
+<script src="http://tarti.kreatif.net/assets/js/libs.js"></script>
+<script src="http://tarti.kreatif.net/assets/js/app.js"></script>

@@ -1,0 +1,59 @@
+[data-component] {
+  position: relative;
+  outline: solid 1px blue;
+  padding: 20px 10px;
+
+  &::before {
+    content: attr(data-component);
+    line-height: 16px;
+    position: absolute;
+    top: -10px;
+    background-color: white;
+    border: solid 1px blue;
+    left: 5px;
+    padding: 4px;
+    z-index: 1;
+  }
+}
+
+.editor-tarti-slider {
+  &,
+  &-slide {
+    min-height: 100px;
+  }
+
+  &-slide {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto 25px;
+    font-family: sans-serif;
+  }
+
+  &-slide-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 60%;
+    font-size: 15px;
+    padding: 0 40px;
+
+    h6 {
+      font-size: 42px;
+      font-weight: 600;
+      margin: unset;
+      line-height: 1.1;
+    }
+    &-slide-img {
+      width: 40%;
+    }
+  }
+
+  .block-list-appender {
+    position: static;
+    width: max-content;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

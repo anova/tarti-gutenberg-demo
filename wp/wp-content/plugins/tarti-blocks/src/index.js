@@ -1,0 +1,1 @@
+import './tarti-slider/tarti-slider';
